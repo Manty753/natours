@@ -22,8 +22,8 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
       //       req.params.tourId
       //     }&user=${req.user.id}&price=${tour.price}`,
       process.env.NODE_ENV === 'development'
-        ? `${req.protocol}://localhost:3000/my-tours`
-        : `${req.protocol}://${req.get('host')}/my-tours`,
+        ? `${req.protocol}://localhost:3000/my-tours?alert=booking`
+        : `${req.protocol}://${req.get('host')}/my-tours?alert=booking`,
     cancel_url:
       process.env.NODE_ENV === 'development'
         ? `${req.protocol}://localhost:3000/tour/${tour.slug}`
