@@ -25,6 +25,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  overscroll-behavior: none;
 }
 
 body {
@@ -41,6 +42,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  overscroll-behavior: none;
 }
 
 .main {
